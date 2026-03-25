@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
+  <title>ENS Redirect — Resolve ENS url records</title>
+  <meta name="description" content="Visit any ENS name's url text record via a simple redirect." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>ENS Redirect</h1>
+      <p class="subtitle">Go to any ENS name's URL, instantly.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>How it works</h2>
+        <ol>
+          <li>Set a <code>url</code> text record on your ENS name at <a href="https://app.ens.domains" target="_blank">app.ens.domains</a></li>
+          <li>Append your <code>.eth</code> name to this URL</li>
+          <li>You get redirected to the URL you set</li>
+        </ol>
+        <div class="example">
+          <code>https://ens-redirect.pages.dev/<strong>yourname.eth</strong></code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Try it</h2>
+        <form id="try-form">
+          <div class="input-group">
+            <input type="text" id="ens-input" placeholder="vitalik.eth" />
+            <button type="submit">Go →</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Why?</h2>
+        <p>ENS names can store a <code>url</code> text record, but there's no easy way to visit it directly. This is a free, open-source tool to make that possible.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built by <a href="https://github.com/gdalabs" target="_blank">GDA Labs</a></p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
