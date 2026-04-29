@@ -2,14 +2,14 @@
 
 Redirect to any ENS name's `url` text record, instantly.
 
-**Live:** https://ens-redirect.pages.dev
+**Live:** https://ens.gdalabs.dev
 
 ## Usage
 
 Append any `.eth` name to the URL:
 
 ```
-https://ens-redirect.pages.dev/yourname.eth
+https://ens.gdalabs.dev/yourname.eth
 ```
 
 The service reads the `url` text record from ENS and performs a 302 redirect.
@@ -20,7 +20,7 @@ The service reads the `url` text record from ENS and performs a 302 redirect.
 2. Select your ENS name
 3. Edit Records → add a `url` text record with your destination URL
 4. Save and sign the transaction
-5. Visit `https://ens-redirect.pages.dev/yourname.eth`
+5. Visit `https://ens.gdalabs.dev/yourname.eth`
 
 ## How it works
 
